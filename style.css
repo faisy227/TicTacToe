@@ -27,6 +27,7 @@ html{
     display: flex;
     flex-wrap: wrap;
     gap: 2vmin;
+    z-index: -1;
 }
 .button-option{
     background: #ffffff;
@@ -50,18 +51,19 @@ html{
     display: block;
 }
 
-.popup{
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 12vmin;
- }
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
 
  #new-game{
     padding: 0.5em 1em;
